@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:background="@color/black"-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:paddingLeft="20dp"
+    >
+
+    <TextView
+        android:id="@+id/zhuboComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@color/red"
+        android:padding="8dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="16dp"
+        android:text="主播回复: liuzhaona来了"/>
+    <TextView
+        android:layout_below="@+id/zhuboComment"
+        android:id="@+id/topMessageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@color/red"
+        android:padding="4dp"
+        android:textSize="16dp"
+        android:text="jjhlzn来了"/>
+    <!--  android:background="@color/green"-->
+    <ListView
+        android:layout_below="@+id/topMessageView"
+        android:id="@+id/commentsList"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"></ListView>
+</RelativeLayout>

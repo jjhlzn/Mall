@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:paddingLeft="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/storeImage"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@mipmap/placeholder"
+        android:layout_centerVertical="true"/>
+
+    <RelativeLayout
+        android:layout_toRightOf="@id/storeImage"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="18dp"
+            android:id="@+id/storeTitle"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BO官方旗舰店"/>
+
+        <TextView
+            android:id="@+id/livers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/storeTitle"
+            android:textColor="@color/white"
+            android:layout_marginTop="2dp"
+            android:textSize="12dp"
+            android:text="1000观看"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

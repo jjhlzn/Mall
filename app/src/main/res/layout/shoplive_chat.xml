@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/shoplive_top_part" />
+
+    <include layout="@layout/shoplive_comments"
+             android:layout_width="match_parent"
+             android:layout_height="250dp"
+             android:layout_above="@+id/bottomPart"/>
+
+    <include layout="@layout/shoplive_bottom_part" android:id="@+id/bottomPart" ></include>
+</RelativeLayout>
